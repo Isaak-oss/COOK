@@ -1,0 +1,80 @@
+.Order {
+    padding-top: 40px;
+}
+.orderTitle{
+    position: relative;
+    font-weight: 700;
+    font-size: 40px;
+    color: #212629;
+    font-weight: 700;
+    font-size: 40px;
+    color: #212629;
+}
+.orderItem {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    min-height: 120px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px 20px 20px 5px;
+    padding: 0px 40px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.priceAndCount {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.count {
+    display: flex;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 99px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 40px;
+    padding: 10px 15px;
+}
+.titleAndImg{
+    display: flex;
+}
+.img{
+
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    background: #EF8802;
+    border-radius: 10px;
+}
+.img img{
+    width: 100%;
+}
+.button {
+    padding: 0 20px ;
+    font-size: 20px;
+}
+.orderButton{
+    margin-top: 30px;
+    width: 360px;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    background: #E9E9E9;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
+    border-radius: 30px;
+
+}
+.price{
+    font-weight: 700;
+    font-size: 18px;
+}

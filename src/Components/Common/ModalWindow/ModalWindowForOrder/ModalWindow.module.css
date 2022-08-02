@@ -1,0 +1,208 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.25);
+    animation-name: appear;
+    animation-duration: 300ms;
+}
+
+.modaldialog {
+    width: 100%;
+    max-width: 550px;
+    background: white;
+    position: relative;
+    margin: 0 20px;
+    max-height: calc(100vh - 40px);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+    border-radius: 40px 40px 0px 0px;
+}
+.modaltitle{
+    align-items: center;
+}
+.modalheader,
+.modalfooter {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+.MenuSpicyIcon{
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+    bottom: -10px;
+    border-radius: 50px;
+    left: 35px;
+    padding: 10px;
+}
+.modalheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    border-radius: 40px 40px 0px 0px;
+}
+
+.modalfooter {
+    border-top: 1px solid #dbdbdb;
+    justify-content: flex-end;
+}
+
+.modalclose {
+    position: absolute;
+    cursor: pointer;
+    padding: 1rem;
+    top: 10px;
+    right: 10px;
+}
+
+.modalbody {
+    overflow: auto;
+}
+.checkbox{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox+label{
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    width: 21px;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 1px solid #3B3E41;
+}
+.checkbox:checked+label {
+    border-color: #FE9102;
+    background: #FE9102;
+    background-image: url("../../../Image/Checked.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.modalcontent {
+    padding: 2rem;
+    background-color:  #212629;
+}
+.ItemInformationTitle{
+    font-weight: 700;
+    font-size: 28px;
+    color: #ffffff;
+}
+.ItemInformationWeightAndPrice{
+    padding: 18px 0 18px 0;
+    font-weight: 300;
+    font-size: 16px;
+    color: #A5A5A7;
+}
+.ItemInformationTetx{
+    font-weight: 300;
+    font-size: 20px;
+    color: #80807c;
+}
+.additionally{
+
+}
+.additionallyTitle{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+.additionallyItem{
+
+}
+.additionallyPrice{
+    display: flex;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 30px 30px 30px 3px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+}
+.additionallyPrice p{
+    font-weight: 300;
+    font-size: 18px;
+    color: #A8AAAB;
+
+}
+.additionallyPriceRight{
+    margin-left: auto;
+    display: flex;
+}
+.additionallyPriceRight p{
+    padding-right: 10px;
+}
+.Count{
+    margin-top:20px;
+    border: 1px solid #ffffff;
+    border-radius: 99px;
+    display: Flex;
+    color:black;
+}
+.MenuButton{
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.ItemCount{
+    font-size: 23px;
+    padding: 2px 20px 5px 20px;
+    color: #ffffff;
+}
+.AddOrderButton{
+    border: none;
+    background: #212629;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5), -1px -1px 6px rgba(255, 255, 255, 0.05), -5px -5px 20px rgba(255, 255, 255, 0.1), 5px 5px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 99px;
+    font-size: 23px;
+    margin-top: 20px;
+    padding: 5px 48px 5px 48px;
+    color: #FE9102;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 300ms ease;
+}
+.AddButton:hover{
+    transform: scale(1.05);
+}
+.modalfooter{
+
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

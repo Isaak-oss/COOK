@@ -1,0 +1,80 @@
+.MyCards{
+    padding-top: 40px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.title{
+    font-weight: 700;
+    font-size: 40px;
+}
+.aside{
+    margin-top: 40px;
+    margin-right: 20px;
+    background: #E9E9E9;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
+    border-radius: 13px;
+    width: 370px;
+    height: 200px;
+}
+.asideContent{
+    padding: 20px 49px;
+    display: flex;
+}
+.asideContent img{
+    padding-right: 10px;
+}
+.cardNum{
+    font-weight: 700;
+    font-size: 20px;
+}
+.button{
+    padding: 10px 0;
+    width: 360px;
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 50px;
+    background: #E9E9E9;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
+    border-radius: 30px;
+}
+.error{
+    font-size: 20px;
+    padding-top: 10px;
+    color: #ff0000;
+}
+.inputFormLong{
+    margin-right: 40px;
+    width: 370px;
+    margin-top: 10px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    border: 2px solid #ffffff;
+    background-color: #E9E9E9;
+    border-radius: 13px;
+}
+.inputFormShort{
+    width: 170px;
+    margin-top: 10px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    border: 2px solid #ffffff;
+    background-color: #E9E9E9;
+    border-radius: 13px;
+}
+.subtitle{
+    font-weight: 300;
+    font-size: 14px;
+    color: #858789;
+}
+.inputGroup{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+}
+.card{
+    padding-top: 40px;
+}

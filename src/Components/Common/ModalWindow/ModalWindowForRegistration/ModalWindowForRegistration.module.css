@@ -1,0 +1,155 @@
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.25);
+    animation-name: appear;
+    animation-duration: 300ms;
+}
+
+.modaldialog {
+    width: 450px;
+    height: 680px;
+    max-width: 550px;
+    background: #E9E9E9;
+    position: relative;
+    margin: 0 20px;
+    max-height: calc(100vh - 40px);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+    border-radius: 40px 40px 40px 5px;
+}
+.modaltitle{
+    align-items: center;
+}
+.modalheader,
+.modalfooter {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.modalheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+.inputForm{
+    width: 100%;
+    margin-top: 17px;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    border: 2px solid #ffffff;
+    background-color: #E9E9E9;
+    border-radius: 13px;
+}
+.lengthValidation{
+    font-weight: 300;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.backIcon{
+    position: absolute;
+    top: 30px;
+    left: 36px;
+}
+.formError{
+    color: red;
+}
+.modalclose {
+    position: absolute;
+    cursor: pointer;
+    padding: 1rem;
+    top: 10px;
+    right: 10px;
+}
+.loginButton{
+    padding-top: 20px;
+    background-color: transparent;
+    font-weight: 300;
+    font-size: 25px;
+    border-top: 1px solid #F4F4F4;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.modalbody {
+    overflow: auto;
+}
+
+.modalcontent {
+    padding: 70px 2rem 0;
+    background-color:  #E9E9E9;
+}
+.buttons{
+    text-align: center;
+}
+.confirmSMS{
+    width: 100%;
+    margin-top: 40px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 30px;
+}
+.confirmWhatsApp{
+    width: 100%;
+    margin-top: 20px;
+    background: #25D366;
+    border-radius: 99px;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 30px;
+}
+.contentForm{
+    min-height: 495px;
+}
+.footer{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer a{
+    font-weight: bold;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

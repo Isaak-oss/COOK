@@ -1,0 +1,25 @@
+.Footer{
+    background-color: #E9E9E9;
+    padding-top: 150px;
+}
+.FooterContent{
+    padding-bottom: 50px;
+}
+.FooterItem{
+    width: 360px;
+    border-top: 1px #D8D8D8 solid;
+    margin-top: 25px;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+}
+.FooterItem a:hover{
+    color:#25D366;
+}
+.FooterItem img{
+    padding-right: 10px;
+}
+.FooterItem a{
+    font-weight: 300;
+    font-size: 18px;
+}

@@ -1,0 +1,58 @@
+.Information{
+    margin-top: 40px;
+}
+.title{
+    font-weight: 700;
+    font-size: 40px;
+    position: relative;
+}
+.content{
+    margin-top: 20px;
+}
+.content p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #858789;
+}
+.submitForm{
+    display: flex;
+    flex-wrap: wrap;
+}
+.input{
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+    background: #E9E9E9;
+    border: 1px solid #FFFFFF;
+    border-radius: 13px;
+    padding: 20px 20px;
+}
+.leftSide{
+    width: 75%;
+    margin-right: 20px;
+}
+.rightSide{
+    margin-left: auto;
+    width: 20%;
+}
+.buttons{
+    margin-top: 30px;
+    display: flex;
+}
+.saveButton{
+    width: 400px;
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 18px;
+    background: #E9E9E9;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
+    border-radius: 30px;
+}
+.deleteButton{
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    color: #212629;
+}

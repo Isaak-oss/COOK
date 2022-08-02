@@ -1,0 +1,24 @@
+.TermsOfUse{
+    padding-top: 60px;
+    background-color: #E9E9E9;
+
+}
+
+.title{
+    font-weight: 700;
+    font-size: 40px;
+}
+.article{
+    padding-top: 50px;
+
+}
+.articleTitle{
+    font-weight: 700;
+    font-size: 20px;
+}
+.articleText{
+    padding-top: 20px;
+    font-weight: 300;
+    font-size: 17px;
+    color: #858789;
+}

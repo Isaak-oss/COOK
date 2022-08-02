@@ -1,0 +1,41 @@
+.Header{
+    padding-top: 40px;
+    background-color: #E9E9E9;
+}
+button{
+    cursor:pointer;
+    border: none;
+}
+.HeaderButton{
+    padding-left: 20px;
+    position: relative;
+}
+.HeaderButtonWhatsApp{
+    background: #25D366;
+    border-radius: 30px;
+    padding:8px 40px 8px 40px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+}
+.HeaderButtonOrder{
+    padding:10px 40px 10px 40px;
+    background: #E9E9E9;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.HeaderButtonProfile{
+    padding:10px;
+    border-radius: 30px;
+    background: #E9E9E9;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08), -1px -1px 6px rgba(255, 255, 255, 0.5), -5px -5px 20px #FFFFFF, 5px 5px 20px #D3D3D3;
+}
+.Header_content{
+    margin-left: auto;
+    display: flex;
+}
