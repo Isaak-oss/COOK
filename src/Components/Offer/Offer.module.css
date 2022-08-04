@@ -3,6 +3,75 @@
     padding-top: 30px;
 }
 
+.onlyTowers{
+    position: relative;
+    background: #E9E9E9;
+    min-height: 400px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05), 10px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 80px 80px 80px 5px;
+    min-height: 500px;
+    padding: 40px 60px 0;
+    overflow: hidden;
+
+}
+.onlyTowersText{
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 22px;
+    color: #212629;
+}
+.onlyTowersTitle{
+    display: flex;
+}
+.onlyTowers h3{
+    font-weight: 700;
+    font-size: 120px;
+}
+.onlyTowers h2{
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: auto;
+}
+.towersBannerImg{
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+.deliveruFromKitchen{
+    position: relative;
+    min-height: 500px;
+    background: #212629;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05), 10px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 80px 80px 80px 5px;
+    padding: 40px 60px 0;
+}
+.deliveryBannerImg{
+    position: absolute;
+    right: 0;
+    top: -70px;
+}
+.deliveruFromKitchen h3{
+    color: white;
+
+    font-weight: 700;
+    font-size: 50px;
+}
+.deliveruFromKitchen button{
+    margin-top: 40px;
+    color: #FE9102;
+    font-weight: 700;
+    font-size: 18px;
+    background: #212629;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5), -1px -1px 6px rgba(255, 255, 255, 0.05), -5px -5px 20px rgba(255, 255, 255, 0.1), 5px 5px 20px rgba(0, 0, 0, 0.8);
+    border-radius: 99px;
+    padding: 8px 10px 8px 30px;
+    display: flex;
+    align-items: center;
+}
+.deliveryBannerButtonImg{
+padding-top: 1px;
+    padding-left: 20px;
+}
 .b{
     width: 300px;
 
@@ -22,6 +91,7 @@
     margin-right: auto;
     margin-top: 30px;
 }
+
 
 .item:hover .Itemformation{
     background-color: #212629;
@@ -144,6 +214,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
 }
 .categoryName{
     font-weight: 300;
@@ -154,7 +225,8 @@
     padding: 5px 30px;
     transition: 500ms ease;
     cursor: pointer;
-    margin-top: 20px;
+    margin: 20px 20px 0 20px;
+
 }
 .categoryName:hover{
     transform: scale(1.05);

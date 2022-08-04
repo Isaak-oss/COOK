@@ -19,7 +19,7 @@ const MenuItem = (props) => {
     return (
         <div className={style.MenuItem}>
             <div className={style.filtred}>
-                <div className={style.filtredOne}> Все {props.currentCategory}</div>
+                <div className={style.filtredOne}> {props.currentCategory}</div>
                 <div className={style.MenuItemItem}>
                 {Menu_map}
                 </div>

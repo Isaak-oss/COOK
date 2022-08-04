@@ -9,8 +9,8 @@ const Offer = (props) => {
 
     return (
         <section className={style.Offer}>
+            <Banners/>
             <div className={"container"}>
-                <Banners/>
                 <MenuItemsContainer/>
             </div>
         </section>

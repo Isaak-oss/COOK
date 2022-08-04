@@ -1,0 +1,21 @@
+.slick-slide{
+    padding: 10px 20px 100px;
+}
+.banner-container{
+    margin: auto;
+    max-width: 1440px;
+}
+.slick-dots{
+    left: -537px;
+    bottom: 134px;
+    font-size: 20px;
+}
+.slick-dots li button:before{
+    content: url("../../Image/carousel_dots.svg") !important;
+    opacity: 1;
+}
+
+.slick-dots li:before {
+    /*content: url("../../Image/carousel_dots.svg"); !* Добавляем в качестве маркера символ *!*/
+
+}

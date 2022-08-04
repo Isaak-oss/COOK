@@ -10,7 +10,7 @@ import {setOrder} from "../../../Redux/UserProfileReduser";
 const MenuItems = (props) => {
 
     let [menuItems, Fillter] = useState(props.menu)
-    let [currentCategory, setCurrentCategory] = useState()
+    let [currentCategory, setCurrentCategory] = useState("Все")
 
 
     useEffect(() => {
@@ -19,9 +19,7 @@ const MenuItems = (props) => {
         }
     }, [props.menu])
 
-    let currCategory = (curr) => {
-        setCurrentCategory(curr)
-    }
+
 
     let onFiltration = (category) => {
         if (category === "all"){
@@ -29,14 +27,15 @@ const MenuItems = (props) => {
         } else {
             let newMenu = (props.menu.filter(e => e.category === category))
             if  (newMenu.length === 0){
-                alert("Такого в меню еще нет")
-                return
+
             }
             Fillter(newMenu)
             console.log(menuItems)
         }
     }
-
+    let currCategory = (curr) => {
+        setCurrentCategory(curr)
+    }
     let category_out = props.category.map(e => <div key={e.category} onClick={() => {onFiltration(e.category); currCategory(e.NameOfCategory)}}><CategoryComponent category={e.NameOfCategory}/></div>)
 
 

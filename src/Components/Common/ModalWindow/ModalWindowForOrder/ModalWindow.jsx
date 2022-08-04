@@ -7,16 +7,20 @@ import whiteClose_Icon from "../../../Image/closeWhite_Icon.svg"
 
 import Additionally from "./Additionally";
 import {setOrder} from "../../../../Redux/UserProfileReduser";
+import {NavLink} from "react-router-dom";
 
-const ModalWindowForOrder = ({isVisible = false, img,  onClose,
+const ModalWindowForOrder = ({
+                                 isVisible = false, img, onClose,
                                  isSpicy, bgcolor, ItemTitle,
                                  ItemWeight, setOrder, id,
-                                 ItemPrice, ItemText, count, add, Remove}) => {
+                                 ItemPrice, ItemText, count, add, Remove
+                             }) => {
 
     let [NewPrice, setNewPrice] = useState(ItemPrice)
+    let [ordered, setOrdered] = useState(false)
 
     useEffect(() => {
-        if(NewPrice != ItemPrice){
+        if (NewPrice != ItemPrice) {
             setNewPrice(ItemPrice * count)
         }
     }, [isVisible])
@@ -26,7 +30,7 @@ const ModalWindowForOrder = ({isVisible = false, img,  onClose,
         setOrder({ItemTitle, ItemText, NewPrice, count, img, id, ItemPrice})
     }
     let ValueInc = (e, additionalePrice) => {
-        if (e){
+        if (e) {
             if (e.target.checked) {
                 setNewPrice(NewPrice + additionalePrice)
             } else {
@@ -42,6 +46,9 @@ const ModalWindowForOrder = ({isVisible = false, img,  onClose,
         }
     }
 
+    let ordereded = () => {
+        setOrdered(true)
+    }
 
     const keydownHandler = ({key}) => {
         switch (key) {
@@ -82,20 +89,34 @@ const ModalWindowForOrder = ({isVisible = false, img,  onClose,
                         <div className={style.additionally}>
                             <p className={style.additionallyTitle}>Дополнительно</p>
                             <div className={style.additionallyItem}>
-                                <Additionally title={"Побольше лука"} additionallyPrice={20} ValueInc={ValueInc} id={1}/>
+                                <Additionally title={"Побольше лука"} additionallyPrice={20} ValueInc={ValueInc}
+                                              id={1}/>
                                 <Additionally title={"По домашнему"} additionallyPrice={0} ValueInc={ValueInc} id={2}/>
-                                <Additionally title={"Грибов побольше"} additionallyPrice={300} ValueInc={ValueInc} id={3}/>
+                                <Additionally title={"Грибов побольше"} additionallyPrice={300} ValueInc={ValueInc}
+                                              id={3}/>
                             </div>
                         </div>
-                        <div className="Row">
+                        <div className={style.buttons}>
                             <div className={style.Count}>
-                                <button className={style.MenuButton} onClick={() => {ValueInc(); add()}}>+</button>
+                                <button className={style.MenuButton} onClick={() => {
+                                    ValueInc();
+                                    add()
+                                }}>+
+                                </button>
                                 <div className={style.ItemCount}>{count}</div>
-                                <button className={style.MenuButton} onClick={() => {ValueDic(); Remove()}}>-</button>
+                                <button className={style.MenuButton} onClick={() => {
+                                    ValueDic();
+                                    Remove()
+                                }}>-
+                                </button>
                             </div>
-                            <div className={style.AddOrderButton} onClick={() => {
-                                submitOrder(); onClose(true)
-                            }}>Добавить {NewPrice}Р</div>
+                            {!ordered ?
+                                <div className={style.AddOrderButton} onClick={() => {
+                                    submitOrder(); ordereded();
+                                }}>Добавить {NewPrice}Р</div>
+                                :
+                                <div className={style.inCard}> <NavLink to={"/cart"}> В корзине</NavLink></div>
+                            }
                         </div>
                     </div>
 
